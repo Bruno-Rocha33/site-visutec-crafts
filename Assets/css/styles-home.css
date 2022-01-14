@@ -1,0 +1,452 @@
+@import url(./variaveis.css);
+
+/*Textos da página*/
+
+.titulo-destaque {
+  font-family: var(--familia-titulo-destaque);
+  font-weight: var(--peso-titulo-destaque);
+  font-size: var(--tamanho-titulo-destaque);
+  color: var(--roxo-escuro);
+}
+
+.titulos {
+  font-family: var(--familia-titulo);
+  font-weight: var(--peso-titulo);
+  font-size: var(--tamanho-titulo);
+  color: var(--roxo-escuro);
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.subtitulos {
+  font-family: var(--familia-subtitulo);
+  font-weight: var(--peso-subtitulo);
+  font-size: var(--tamanho-subtitulo);
+  color: var(--roxo-vivo)
+}
+
+p {
+  font-family: var(--familia-corpo);
+  font-weight: var(--peso-corpo);
+  font-size: var(--tamanho-corpo);
+  color: #000;
+  line-height: 160%;
+}
+
+hr {
+  transform: rotate(90deg);
+  border: 1px solid var(--roxo-claro);
+  width: 50px;
+  margin: 80px auto;
+}
+
+
+/*Container Largura máxima da página*/
+
+.container-largura {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.container_sessao_principal {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.gradiente {
+  background: linear-gradient(278.24deg, rgba(224, 191, 255, 0.26) 1.14%, rgba(163, 198, 255, 0.26) 98.35%);
+}
+
+.container_sessao_principal {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+.itens_sessao_principal,
+.itens_sessao_principal_foto {
+  flex: 1 1 43%;
+  align-self: center;
+}
+
+.foto_principal_home {
+  position: relative;
+  max-width: 100%;
+}
+
+.icones_header {
+  max-width: 100%;
+  position: absolute;
+  z-index: 100;
+  animation: pulse 3s infinite alternate;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+/* Sessão 2 após banner principal*/
+
+.cards_check {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card_filho {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid #65419A;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+
+/* Sessão 3 "pequenos e médios artesões." */
+
+.background-color-sessao-pequenos-artesoes-home {
+  background: var(--cinza);
+}
+
+.container-pequenos-artesoes-home {
+  display: flex;
+  padding: 2rem 0;
+}
+
+.itens-pequenos-artesoes-home {
+  position: relative;
+}
+
+.icones-mulher-no-atelie {
+  position: absolute;
+  top: 5%;
+  right: 10%;
+  animation: pulse 3s infinite alternate;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.botao-roxo-icone {
+  background-image: url(../icones/icons-whatsapp-branco.svg);
+  background-repeat: no-repeat;
+  background-position: left 1.5rem center;
+}
+
+
+/* Sessão 4 "Conheça nossos produtos" */
+
+.container-conheca-nossos-produtos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.itens-conheca-nossos-produtos {
+  position: relative;
+}
+
+figcaption {
+  margin-bottom: 1rem;
+}
+
+.img-acessorios-mobile {
+  display: none;
+}
+
+.texto-conheca-nossos-produtos {
+  z-index: 1;
+  color: #fff;
+  font-family: var(--familia-corpo);
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.corte-a-laser {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.corte-e-contorno {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.acessorios {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.btn-saiba-mais {
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  padding: 1rem 4rem;
+  font-size: 1rem;
+}
+
+.btn-saiba-mais:hover {
+  background: #fff;
+  color: var(--roxo-escuro);
+}
+
+
+/* Formulário*/
+
+.formulario-contato {
+  background: var(--roxo-escuro);
+  margin: 4rem 0;
+}
+
+fieldset {
+  border: none;
+  font-family: var(--familia-corpo);
+}
+
+.chamada-contato :first-child {
+  color: #fff;
+  font-size: 1.8rem;
+  margin-bottom: 0;
+}
+
+.chamada-contato :last-child {
+  color: #fff;
+  font-size: 1rem;
+  margin-top: .3rem;
+  margin-bottom: 2rem;
+}
+
+.contato {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.itens-contato {
+  align-self: center;
+}
+
+.input-padrao {
+  background: #FFFFFF;
+  border: none;
+  border-radius: 50px;
+  padding: 1rem 2rem;
+  margin-left: 1rem;
+  outline: none;
+  transition: .2s ease-in-out;
+}
+
+input:valid,
+input:focus {
+  border-bottom: 3px solid var(--roxo-vivo);
+  font-size: 1.05rem;
+}
+
+.enviar {
+  margin-left: 1rem;
+  border: none;
+  background: var(--roxo-vivo);
+  color: #fff;
+  border-radius: 50px;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: .2s ease-in-out;
+}
+
+.enviar:hover {
+  background: var(--cinza);
+  color: var(--roxo-vivo);
+  font-weight: bold;
+}
+
+/* Depoimentos*/
+
+.depoimentos h1 {
+  text-align: left;
+}
+
+.depoimentos {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.card-depoimento {
+  display: flex;
+  width: 640px;
+}
+
+.card-depoimento div {
+  padding-left: 1rem;
+}
+
+.texto-depoimento p:nth-child(4),
+.texto-depoimento p:nth-child(6) {
+  color: var(--roxo-escuro);
+  font-weight: bold;
+
+}
+
+.texto-depoimento p {
+  margin: 0;
+}
+
+.texto-depoimento {
+  align-self: center;
+}
+
+
+/* Responsivo Mobile */
+
+@media only screen and (max-width: 600px) {
+  .container-largura {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .container_sessao_principal {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  .titulo-destaque,
+  .titulos {
+    font-size: 1.5rem;
+  }
+
+  hr {
+    margin: 50px auto;
+  }
+
+  .container-pequenos-artesoes-home {
+    flex-direction: column;
+  }
+
+  .itens-pequenos-artesoes-home img {
+    max-width: 100%;
+  }
+
+  .itens-conheca-nossos-produtos img {
+    max-width: 100%;
+  }
+
+  .texto-conheca-nossos-produtos {
+    font-size: 1.5rem;
+  }
+
+  .btn-saiba-mais {
+    border: 1px solid #fff;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+  }
+
+  .img-acessorios {
+    visibility: hidden;
+  }
+
+  .img-acessorios-mobile {
+    display: block;
+  }
+
+  .acessorios {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+  }
+
+  /* Contato*/
+  .contato {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .input-padrao,
+  .enviar {
+    margin-left: 0;
+    margin-bottom: 1rem;
+    ;
+  }
+
+  /*slider depoimentos*/
+
+  .depoimentos {
+    padding: 0 1rem;
+  }
+
+  .card-depoimento {
+    flex-direction: column;
+    width: 100%;
+  }
+
+}
+
+/* Responsivo Tablet */
+
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+
+  .container-largura,
+  .container_sessao_principal {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  .container-conheca-nossos-produtos {
+  justify-content: center;
+  }
+
+  .img-acessorios {
+    max-width: 100%;
+  }
+
+  .acessorios  figcaption {
+    margin-bottom: .3rem;
+    font-size: 1.5rem;
+  }
+
+  .acessorios {
+    top: 40%
+  }
+
+  .input-padrao, .enviar {
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+  
+  .input-padrao:first-child {
+    margin-right: 1rem;
+  }
+
+  .depoimentos {
+    padding: 0 1rem;
+  }
+
+
+
+}

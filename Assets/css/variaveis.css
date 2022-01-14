@@ -1,0 +1,23 @@
+:root {
+  --roxo-escuro: #65419A;
+  --roxo-vivo: #C63CD7;
+  --cinza: #F8F8FF;
+  --roxo-claro: #EFE1F3;
+
+  --familia-titulo-destaque: 'inter', sans-serif;
+  --familia-titulo: 'inter', sans-serif;
+  --familia-subtitulo: 'inter', sans-serif;
+  --familia-corpo: 'inter', sans-serif;
+
+  --peso-titulo-destaque: 600;
+  --peso-titulo: 600;
+  --peso-subtitulo: 500;
+  --peso-corpo: 400;
+
+  --tamanho-titulo-destaque: 3rem;
+  --tamanho-titulo: 2rem;
+  --tamanho-subtitulo: 1.125rem;
+  --tamanho-corpo: 1rem;
+}
+
+

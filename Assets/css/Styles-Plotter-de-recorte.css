@@ -1,0 +1,269 @@
+@import url(./variaveis.css);
+
+/*Textos da página*/
+
+.titulo-destaque {
+  font-family: var(--familia-titulo-destaque);
+  font-weight: var(--peso-titulo-destaque);
+  font-size: var(--tamanho-titulo-destaque);
+  color: var(--roxo-escuro);
+}
+
+.titulos {
+  font-family: var(--familia-titulo);
+  font-weight: var(--peso-titulo);
+  font-size: var(--tamanho-titulo);
+  color: var(--roxo-escuro);
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.subtitulos {
+  font-family: var(--familia-subtitulo);
+  font-weight: var(--peso-subtitulo);
+  font-size: var(--tamanho-subtitulo);
+  color: var(--roxo-vivo)
+}
+
+p {
+  font-family: var(--familia-corpo);
+  font-weight: var(--peso-corpo);
+  font-size: var(--tamanho-corpo);
+  color: #000;
+  line-height: 160%;
+}
+
+hr {
+  transform: rotate(90deg);
+  border: 1px solid var(--roxo-claro);
+  width: 50px;
+  margin: 80px auto;
+}
+
+/*container_sessão_principal*/
+
+.container_sessao_principal {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.container-largura {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.gradiente {
+  background: linear-gradient(278.24deg, rgba(224, 191, 255, 0.26) 1.14%, rgba(163, 198, 255, 0.26) 98.35%);
+}
+
+.container_sessao_principal {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  align-items: center;
+  
+}
+
+.itens_sessao_principal,
+.itens_sessao_principal_foto {
+  flex: 1 1 45%;
+  
+}
+
+.container_sessao_principal .titulos {
+  margin: 0 0;
+}
+
+.foto_plotter_de_recorte {
+  position: relative;
+  max-width: 100%;
+}
+
+/* sessao principal logo após header*/
+
+.foto_plotter_de_recorte_icones {
+  max-width: 100%;
+  position: absolute;
+  z-index: 100;
+  animation: pulse 3s infinite alternate;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+/* Sessão 2 após banner principal*/
+
+.cards_check {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card_filho {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid #65419A;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+/* Sessão 3 Uma plotter de recorte e várias possibilidades */
+
+.container_cards_projetos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.cards_projetos {
+  justify-self: center;
+}
+
+.cards_projetos p {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+/* Botao centralizado carrosel */
+
+.botao-centralizado {
+  text-align: center;
+}
+
+/*Sessão com tabela ficha técnica*/
+
+table {
+  font-family: var(--familia-corpo);
+  color: var(--roxo-escuro);
+  width: 100%;
+}
+
+table tr:nth-child(odd) {
+  background: #F5F5FF;
+}
+
+table,
+th,
+td {
+  padding: 15px;
+  border-collapse: collapse;
+}
+
+table tr:first-child td:first-child {
+  border-radius: 20px 0 0 0;
+}
+
+table tr:first-child td:last-child {
+  border-radius: 0 20px 0 0;
+}
+
+table tr:last-child td:first-child {
+  border-radius: 0 0 0 20px;
+}
+
+table tr:last-child td:last-child {
+  border-radius: 0 0 20px 0;
+}
+
+/* sessão "E ela tem acessórios?" */
+
+.sessao-acessorios {
+  background: #F8F8FF;
+  padding: 3rem 0;
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.sessao-acessorios h1 {
+  margin-top: 0
+}
+
+/* Última sessão com card de preço */
+
+.sessao-preco {
+  text-align: center;
+  width: 100%;
+}
+
+.card_duvida {
+  background: var(--cinza);
+  padding: 2rem;
+  border-radius: 20px;
+  max-width: 550px;
+  margin: 2rem auto;
+  vertical-align: middle;
+}
+
+.card_duvida p {
+  color: var(--roxo-escuro)
+}
+
+.card_duvida p:first-child {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.enviar-mensagem img {
+  position: relative;
+  top: 50%;
+  transform: translateY(30%);
+  margin-right: .5rem;
+}
+
+.enviar-mensagem {
+  font-family: var(--familia-corpo);
+  font-weight: bold;
+  color: #11D376;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/*Resposivo Mobile*/
+
+@media only screen and (max-width: 600px) {
+
+  .container-largura {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .container_sessao_principal {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  .titulo-destaque,
+  .titulos {
+    font-size: 1.5rem;
+  }
+
+  hr {
+    margin: 50px auto;
+  }
+
+  .itens_sessao_principal .botao-roxo {
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+}
+
+/* Responsivo Tablet*/
+
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+  .container-largura,
+  .container_sessao_principal {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 1rem;
+  }
+}

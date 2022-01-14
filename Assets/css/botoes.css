@@ -1,0 +1,35 @@
+.botao-roxo {
+  text-decoration: none;
+  font-family: var(--familia-corpo);
+  color: #fff;
+  background-color: var(--roxo-vivo);
+  padding: 15px 50px;
+  border-radius: 50px;
+  display: inline-block;
+  margin: 1rem 0;
+  transition: .2s linear;
+}
+
+.botao-roxo:hover {
+  background-color: var(--cinza);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-bottom: 3px solid var(--roxo-vivo);
+  color: var(--roxo-vivo);
+  font-weight: bold;
+}
+
+
+.botao-roxo-com-icone {
+  text-decoration: none;
+  font-family: var(--familia-corpo);
+  color: #fff;
+  background-color: var(--roxo-vivo);
+  padding: 20px 30px 20px 60px;
+  border-radius: 50px;
+  display: inline-block;
+  margin: 1rem 0;
+}
+
+.botao-roxo-com-icone:hover {
+  border-bottom: 3px solid var(--roxo-escuro);
+}

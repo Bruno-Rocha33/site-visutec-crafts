@@ -1,0 +1,65 @@
+.card_preco h1,
+.card_preco p {
+  color: #fff;
+  margin: 0;
+  font-family: var(--familia-corpo);
+}
+
+.card_preco {
+  background: var(--roxo-escuro);
+  padding: 2rem;
+  border-radius: 20px;
+  width: fit-content;
+  max-width: 550px;
+  height: 450px;
+  margin: 0 auto;
+  vertical-align: middle;
+}
+
+.preco {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.formas-de-pagamento {
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .card_preco {
+    height: auto;
+  }
+}
+
+
+/* Card preço metade da tela */
+
+.card_preco--metade-tela {
+  background: var(--roxo-escuro);
+  padding: 2rem;
+  border-radius: 20px;
+  width: 40%;
+  margin: 0 auto;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.card_preco--metade-tela h1, .card_preco--metade-tela p {
+  color: #fff;
+  font-family: var(--familia-corpo);
+}
+
+
+@media only screen and (max-width: 600px) {
+  .card_preco--metade-tela{
+    width: 100%;
+  }
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+  .card_preco--metade-tela{
+    width: 100%;
+  }
+}

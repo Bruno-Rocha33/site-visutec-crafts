@@ -1,0 +1,96 @@
+/*Carrosel de produto*/
+
+.container-carrosel {
+  background: #F8F8FF;
+}
+
+.card-carrosel-titulo {
+  padding: 3rem 2rem;
+}
+
+.titulo-carrosel {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #000;
+  margin: .3rem;
+}
+
+.subtitulo-carrosel {
+  border-bottom: 1px solid #ECECFF;
+  padding-bottom: 1rem;
+}
+
+#wrapper {
+  padding: 2rem 0;
+  width: 100%;
+  max-width: 1280px;
+  position: relative;
+  margin: 0 auto;
+}
+
+#carousel {
+  overflow: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+#carousel::-webkit-scrollbar {
+  height: 0;
+}
+
+#prev,
+#next {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background: white;
+  border: none;
+  padding: 8px;
+  border-radius: 50%;
+  outline: 0;
+  cursor: pointer;
+  position: absolute;
+}
+
+#prev {
+  top: 50%;
+  left: 0;
+  transform: translate(50%, -50%);
+  display: none;
+  background: #EFE1F3;
+}
+
+#next {
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+  background: #EFE1F3;
+}
+
+#content {
+  display: grid;
+  grid-gap: 16px;
+  grid-auto-flow: column;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.item {
+  width: 396px;
+  height: auto;
+  background: white;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .item:first-child {
+    width: 300px;
+    height: auto;
+  }
+
+  .item:not(:first-child) {
+    width: auto;
+    height: auto;
+  }
+}
